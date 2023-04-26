@@ -15,9 +15,14 @@ export default defineConfig({
       redirect: '/home',
     },
     {
-      name: '首页',
+      name: '入门简单示例',
       path: '/home',
       component: './Home',
+    },
+    {
+      name: '轨道控制器',
+      path: '/OrbitControls',
+      component: './OrbitControls',
     },
     {
       name: '权限演示',
@@ -32,4 +37,3 @@ export default defineConfig({
   ],
   npmClient: 'pnpm',
 });
-
