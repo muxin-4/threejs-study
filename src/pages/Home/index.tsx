@@ -35,13 +35,15 @@ const HomePage: React.FC = () => {
     camera.position.z = 5;
 
     // 创建渲染函数，并在每个帧中旋转立方体
-    function render() {
+    function animate() {
+      requestAnimationFrame(animate);
+
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
+
       renderer.render(scene, camera);
-      requestAnimationFrame(render);
     }
-    render();
+    animate();
   }, []);
 
   return (
