@@ -8,7 +8,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 import styles from './index.less';
 
-const HomePage: React.FC = () => {
+const OrbitControlsPage: React.FC = () => {
   const { name } = useModel('global');
   const canvasRef = useRef(null);
 
@@ -60,4 +60,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default OrbitControlsPage;

@@ -12,12 +12,12 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/helloWorld',
     },
     {
       name: '入门简单示例',
-      path: '/home',
-      component: './Home',
+      path: '/helloWorld',
+      component: './HelloWorld',
     },
     {
       name: '轨道控制器',

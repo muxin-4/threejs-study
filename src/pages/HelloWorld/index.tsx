@@ -6,7 +6,7 @@ import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import styles from './index.less';
 
-const HomePage: React.FC = () => {
+const HelloWorldPage: React.FC = () => {
   const { name } = useModel('global');
   const canvasRef = useRef(null);
 
@@ -56,4 +56,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default HelloWorldPage;
